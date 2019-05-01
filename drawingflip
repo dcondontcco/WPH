@@ -3,7 +3,7 @@
 <html>
   <head>
 <style>
-.element::-webkit-scrollbar { width: 0 }
+.element::-webkit-scrollbar { display: none; }
 </style>
 </head>
   
