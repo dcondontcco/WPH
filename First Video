@@ -2,9 +2,17 @@
 <html>
 <body>
 
-<h1>My First Heading</h1>
+<iframe id="video" src="//www.youtube.com/embed/5iiPC-VGFLU" frameborder="0" allowfullscreen></iframe>
 
-<p>My first paragraph.</p>
+
+$(function(){
+  $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+
+  // If you want to keep full screen on window resize
+  $(window).resize(function(){
+    $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+  });
+});
 
 </body>
 </html>
